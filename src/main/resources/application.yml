@@ -1,0 +1,14 @@
+server:
+  port: 12000
+  contextPath: /htmlservice
+
+jasypt:
+    encryptor:
+        algorithm: PBEWITHMD5ANDDES
+        password: ${APP_ENCRYPTION_PASSWORD:}
+        keyObtentionIterations: 1000
+        poolSize: 1
+        providerName: SunJCE
+        saltGeneratorClassname: org.jasypt.salt.RandomSaltGenerator
+        stringOutputType: base64
+        proxyPropertySources: false
