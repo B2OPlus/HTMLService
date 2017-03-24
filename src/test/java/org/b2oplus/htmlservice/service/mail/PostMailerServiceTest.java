@@ -19,6 +19,7 @@ import static org.mockito.Matchers.notNull;
  * Created by abuabdul
  */
 @RunWith(SpringRunner.class)
+@SpringBootTest
 public class PostMailerServiceTest {
 
     @Value("${email.admin.username}")
