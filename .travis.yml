@@ -1,14 +1,24 @@
 language: java
 
+os:
+   - linux
+
 jdk:
-  - oraclejdk8
+   - oraclejdk8
 
-  sudo: false
+sudo: false
 
-  cache:
-    directories:
-      - $HOME/.m2
+cache:
+   directories:
+     - $HOME/.m2
 
-      install: /bin/true
+install: /bin/true
 
-      script: mvn clean integration-test
+script: mvn clean integration-test
+
+branches:
+   only:
+      - master
+
+notifications:
+   email: false
