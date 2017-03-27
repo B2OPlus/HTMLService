@@ -1,1 +1,1 @@
-web: mvn clean install spring-boot:run -DskipTests
+web: java -jar target/htmlservice.war
