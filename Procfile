@@ -1,1 +1,1 @@
-web: java -jar -Dserver.port=$PORT  target/htmlservice.war
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/htmlservice.war
