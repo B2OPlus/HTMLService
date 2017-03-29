@@ -1,5 +1,5 @@
 server:
-  port: 12000
+  port: 20170
   contextPath: /htmlservice
 
 jasypt:
@@ -12,3 +12,7 @@ jasypt:
         saltGeneratorClassname: org.jasypt.salt.RandomSaltGenerator
         stringOutputType: base64
         proxyPropertySources: false
+
+origins:
+    b2oplus: http://b2oplus.org
+#graceful ascii banner

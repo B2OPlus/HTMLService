@@ -33,7 +33,7 @@ public class HtmlServiceRestController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> sayhello(HttpServletResponse response) {
         logger.info("HTML Service API says Hello");
-        response.addHeader("Content-type","application/json");
+        response.addHeader("Content-type", "application/json");
         return new ResponseEntity("Hello", HttpStatus.OK);
     }
 
