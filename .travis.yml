@@ -14,7 +14,7 @@ cache:
 
 install: /bin/true
 
-script: mvn clean integration-test
+script: mvn clean 
 
 branches:
    only:
