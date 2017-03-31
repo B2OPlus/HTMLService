@@ -14,7 +14,7 @@ cache:
 
 install: /bin/true
 
-script: mvn clean 
+script: mvn clean compile
 
 branches:
    only:
