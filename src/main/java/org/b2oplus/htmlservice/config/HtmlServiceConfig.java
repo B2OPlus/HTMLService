@@ -64,10 +64,10 @@ public class HtmlServiceConfig {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                String origins = Optional.of(originProperty.getB2oplus()).orElse("*");
+                String origins = Optional.of(originProperty.getB2oplus()).filter(s -> !s.isEmpty()).orElse("*");
                 registry.addMapping("/api/**")
                         .allowedOrigins(origins)
-                        .allowedMethods("GET", "OPTIONS", "POST", "PUT", "DELETE")
+                        .allowedMethods("GET", "HEAD", "OPTIONS", "POST", "PUT", "DELETE")
                         .allowCredentials(true).maxAge(3600);
             }
         };

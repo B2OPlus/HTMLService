@@ -1,6 +1,5 @@
 server:
   port: 20170
-  contextPath: /htmlservice
 
 jasypt:
     encryptor:
@@ -15,4 +14,5 @@ jasypt:
 
 origins:
     b2oplus: http://b2oplus.org
+
 #graceful ascii banner
